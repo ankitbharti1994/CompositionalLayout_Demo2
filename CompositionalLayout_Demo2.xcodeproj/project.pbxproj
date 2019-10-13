@@ -13,6 +13,8 @@
 		CE1B30BA2353918000FDFEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1B30B82353918000FDFEFA /* Main.storyboard */; };
 		CE1B30BC2353918400FDFEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1B30BB2353918400FDFEFA /* Assets.xcassets */; };
 		CE1B30BF2353918400FDFEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1B30BD2353918400FDFEFA /* LaunchScreen.storyboard */; };
+		CE1B30C82353A9CF00FDFEFA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B30C62353A9CF00FDFEFA /* CollectionViewCell.swift */; };
+		CE1B30C92353A9CF00FDFEFA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B30C72353A9CF00FDFEFA /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		CE1B30BB2353918400FDFEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1B30BE2353918400FDFEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1B30C02353918400FDFEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1B30C62353A9CF00FDFEFA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE1B30C72353A9CF00FDFEFA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		CE1B30CA2353B2EB00FDFEFA /* CompositionalLayout_Demo2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CompositionalLayout_Demo2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +61,12 @@
 		CE1B30B12353918000FDFEFA /* CompositionalLayout_Demo2 */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B30CA2353B2EB00FDFEFA /* CompositionalLayout_Demo2.entitlements */,
 				CE1B30B22353918000FDFEFA /* AppDelegate.swift */,
 				CE1B30B42353918000FDFEFA /* SceneDelegate.swift */,
 				CE1B30B62353918000FDFEFA /* ViewController.swift */,
+				CE1B30C62353A9CF00FDFEFA /* CollectionViewCell.swift */,
+				CE1B30C72353A9CF00FDFEFA /* CollectionViewCell.xib */,
 				CE1B30B82353918000FDFEFA /* Main.storyboard */,
 				CE1B30BB2353918400FDFEFA /* Assets.xcassets */,
 				CE1B30BD2353918400FDFEFA /* LaunchScreen.storyboard */,
@@ -127,6 +135,7 @@
 			files = (
 				CE1B30BF2353918400FDFEFA /* LaunchScreen.storyboard in Resources */,
 				CE1B30BC2353918400FDFEFA /* Assets.xcassets in Resources */,
+				CE1B30C92353A9CF00FDFEFA /* CollectionViewCell.xib in Resources */,
 				CE1B30BA2353918000FDFEFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +149,7 @@
 			files = (
 				CE1B30B72353918000FDFEFA /* ViewController.swift in Sources */,
 				CE1B30B32353918000FDFEFA /* AppDelegate.swift in Sources */,
+				CE1B30C82353A9CF00FDFEFA /* CollectionViewCell.swift in Sources */,
 				CE1B30B52353918000FDFEFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CompositionalLayout_Demo2/CompositionalLayout_Demo2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				INFOPLIST_FILE = CompositionalLayout_Demo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankit.CompositionalLayout-Demo2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +315,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CompositionalLayout_Demo2/CompositionalLayout_Demo2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				INFOPLIST_FILE = CompositionalLayout_Demo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankit.CompositionalLayout-Demo2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
